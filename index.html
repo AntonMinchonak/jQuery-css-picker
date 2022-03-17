@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Уроки по jQuery</title>
+  </head>
+
+  <body>
+    <h1><span>TEXT Example for CSS code</span></h1>
+
+    <div class="container">
+      <div class="block">
+        <div class="block-header">Настройки:</div>
+        <div class="block-body">
+          <label for="size">Размер шрифта</label>
+          <input type="range" name="" id="size" min="10" max="100" />
+
+          <label for="x-offset"> Смешение по Х</label>
+          <input type="range" name="" id="x-offset" min="-40" max="40" value="10" />
+
+          <label for="y-offset">Смешение по У</label>
+          <input type="range" name="" id="y-offset" min="-40" max="40" value="5" />
+
+          <label for="blur">Размытие</label>
+          <input type="range" name="" id="blur" min="0" max="20" value="5" />
+
+          <label for="bold">Толщина шрифта</label>
+          <input type="range" name="" id="bold" min="400" max="800" value="600" step="200" />
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-header">Цвет:</div>
+        <div class="block-body">
+          <div class="color-container">
+            <label for="color">Цвет тени</label>
+            <input type="color" value="#686868" name="" id="color" />
+            <label for="colorT">Цвет текста</label>
+            <input type="color" value="#686868" name="" id="colorT" />
+          </div>
+          <label for="opacity">Прозрачность тени</label>
+          <input type="range" name="" id="opacity" min="0" max="1" value="1" step="0.1" />
+          <label for="opacityT">Прозрачность текста</label>
+          <input type="range" name="" id="opacityT" min="0" max="1" value="1" step="0.1" />
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-header">Результат</div>
+        <div class="block-body">
+          <label for="hex">Цвет в HEX</label>
+          <textarea name="" id="hex" cols="36" rows="7"></textarea>
+          <label for="RGBA">Цвет в RGBA</label>
+          <textarea name="" id="RGBA" cols="30" rows="7"></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

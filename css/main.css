@@ -1,0 +1,93 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 940px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(202, 202, 202);
+}
+
+h1 {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 55px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-shadow: 10px 5px 5px rgb(104, 104, 104);
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgb(139, 139, 139);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 3px 9px rgba(145, 145, 145, 1);
+}
+
+.block-header {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(20, 102, 255);
+  color: white;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.color-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.color-container > label {
+  margin: 0;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 230px;
+  cursor: pointer;
+}
+
+input[type="color"] {
+  border: none;
+  outline: none;
+  background: none;
+  height: 40px;
+  width: 100px;
+  justify-self: end;
+  border-radius: 4;
+  padding: 0;
+  cursor: pointer;
+}
+
+input[type="color"]:focus {
+  background-color: rgb(145, 145, 255);
+  padding: 0 2px;
+}
+
+label {
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgb(116, 116, 116);
+}
+
+textarea {
+  resize: none;
+}
